@@ -1,0 +1,149 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     train-weka.filters.unsupervised.attribute.Remove-R3-5,9-11,13-14,16-19,21,23-25,28,30-31,33-34,37-38,41-56,58-65,67-82,84-85,87-89,91-96,98-106,108-131-weka.filters.unsupervised.attribute.Remove-V-R7,6,10,15,14,13,17,3,2,18,4,1,12,23,9,8,21,20,24,16,5,22,19,11,25
+Instances:    4920
+Attributes:   25
+              itching
+              skin_rash
+              chills
+              joint_pain
+              stomach_pain
+              vomiting
+              fatigue
+              weight_loss
+              lethargy
+              high_fever
+              sunken_eyes
+              sweating
+              headache
+              nausea
+              loss_of_appetite
+              constipation
+              abdominal_pain
+              chest_pain
+              cramps
+              swelling_joints
+              loss_of_balance
+              bladder_discomfort
+              irritability
+              family_history
+              prognosis
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 1.41 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.17 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1612               96.3539 %
+Incorrectly Classified Instances        61                3.6461 %
+Kappa statistic                          0.9626
+Mean absolute error                      0.0025
+Root mean squared error                  0.0366
+Relative absolute error                  5.2513 %
+Root relative squared error             23.6939 %
+Total Number of Instances             1673     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.794    0.002    0.871      0.794    0.831      0.828    0.996     0.781     Fungal infection
+                 1.000    0.007    0.807      1.000    0.893      0.895    1.000     0.983     Allergy
+                 0.943    0.000    1.000      0.943    0.971      0.970    1.000     0.994     GERD
+                 0.891    0.000    1.000      0.891    0.943      0.943    1.000     1.000     Chronic cholestasis
+                 0.905    0.000    1.000      0.905    0.950      0.950    0.999     0.964     Drug Reaction
+                 0.935    0.000    1.000      0.935    0.966      0.966    0.999     0.973     Peptic ulcer diseae
+                 0.949    0.001    0.949      0.949    0.949      0.947    0.999     0.937     AIDS
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Diabetes 
+                 0.957    0.000    1.000      0.957    0.978      0.977    1.000     0.998     Gastroenteritis
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Bronchial Asthma
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hypertension 
+                 0.977    0.000    1.000      0.977    0.988      0.988    1.000     0.998     Migraine
+                 0.957    0.000    1.000      0.957    0.978      0.978    1.000     0.991     Cervical spondylosis
+                 1.000    0.002    0.892      1.000    0.943      0.943    1.000     0.993     Paralysis (brain hemorrhage)
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Jaundice
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Malaria
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Chicken pox
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Dengue
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Typhoid
+                 1.000    0.004    0.833      1.000    0.909      0.911    0.999     0.955     hepatitis A
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hepatitis B
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hepatitis C
+                 0.951    0.001    0.951      0.951    0.951      0.950    0.999     0.944     Hepatitis D
+                 0.941    0.000    1.000      0.941    0.970      0.970    0.999     0.973     Hepatitis E
+                 0.971    0.002    0.917      0.971    0.943      0.942    0.999     0.917     Alcoholic hepatitis
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Tuberculosis
+                 0.957    0.000    1.000      0.957    0.978      0.977    1.000     0.999     Common Cold
+                 1.000    0.001    0.953      1.000    0.976      0.976    1.000     0.999     Pneumonia
+                 0.939    0.000    1.000      0.939    0.969      0.969    1.000     0.983     Dimorphic hemmorhoids(piles)
+                 1.000    0.001    0.957      1.000    0.978      0.977    1.000     0.996     Heart attack
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Varicose veins
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hypothyroidism
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hyperthyroidism
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hypoglycemia
+                 0.860    0.000    1.000      0.860    0.925      0.925    0.999     0.967     Osteoarthristis
+                 0.941    0.002    0.889      0.941    0.914      0.913    0.998     0.876     Arthritis
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     (vertigo) Paroymsal  Positional Vertigo
+                 0.919    0.010    0.667      0.919    0.773      0.777    0.994     0.658     Acne
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Urinary tract infection
+                 0.956    0.002    0.935      0.956    0.945      0.944    0.999     0.975     Psoriasis
+                 0.750    0.000    1.000      0.750    0.857      0.863    0.995     0.860     Impetigo
+Weighted Avg.    0.964    0.001    0.969      0.964    0.964      0.964    0.999     0.971     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z aa ab ac ad ae af ag ah ai aj ak al am an ao   <-- classified as
+ 27  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7  0  0  0 |  a = Fungal infection
+  0 46  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = Allergy
+  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0 |  c = GERD
+  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = Chronic cholestasis
+  4  0  0  0 38  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  e = Drug Reaction
+  0  0  0  0  0 43  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  f = Peptic ulcer diseae
+  0  2  0  0  0  0 37  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  g = AIDS
+  0  0  0  0  0  0  0 36  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  h = Diabetes 
+  0  0  0  0  0  0  0  0 44  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = Gastroenteritis
+  0  0  0  0  0  0  0  0  0 53  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = Bronchial Asthma
+  0  0  0  0  0  0  0  0  0  0 45  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  k = Hypertension 
+  0  0  0  0  0  0  0  0  0  0  0 42  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  l = Migraine
+  0  2  0  0  0  0  0  0  0  0  0  0 45  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  m = Cervical spondylosis
+  0  0  0  0  0  0  0  0  0  0  0  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  n = Paralysis (brain hemorrhage)
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  o = Jaundice
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  p = Malaria
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  q = Chicken pox
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 34  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  r = Dengue
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 42  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  s = Typhoid
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 35  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  t = hepatitis A
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  u = Hepatitis B
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 46  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  v = Hepatitis C
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  w = Hepatitis D
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2 32  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  x = Hepatitis E
+  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  y = Alcoholic hepatitis
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  z = Tuberculosis
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  2  0  0  0  0  0  0  0  0  0  0  0  0  0 | aa = Common Cold
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0 | ab = Pneumonia
+  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 31  0  0  0  0  0  0  0  0  0  0  0  0 | ac = Dimorphic hemmorhoids(piles)
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0  0  0  0  0 | ad = Heart attack
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0 | ae = Varicose veins
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0  0  0 | af = Hypothyroidism
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 40  0  0  0  0  0  0  0  0 | ag = Hyperthyroidism
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 38  0  0  0  0  0  0  0 | ah = Hypoglycemia
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 43  4  0  0  0  3  0 | ai = Osteoarthristis
+  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 32  0  0  0  0  0 | aj = Arthritis
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0 | ak = (vertigo) Paroymsal  Positional Vertigo
+  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 34  0  0  0 | al = Acne
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 35  0  0 | am = Urinary tract infection
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0 43  0 | an = Psoriasis
+  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  8  0  0 30 | ao = Impetigo
+

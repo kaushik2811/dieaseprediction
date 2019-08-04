@@ -1,0 +1,191 @@
+J48 pruned tree
+------------------
+
+malaise <= 0
+|   chills <= 0
+|   |   diarrhoea <= 0
+|   |   |   loss_of_balance <= 0
+|   |   |   |   joint_pain <= 0
+|   |   |   |   |   chest_pain <= 0
+|   |   |   |   |   |   lethargy <= 0
+|   |   |   |   |   |   |   stiff_neck <= 0
+|   |   |   |   |   |   |   |   nausea <= 0
+|   |   |   |   |   |   |   |   |   breathlessness <= 0
+|   |   |   |   |   |   |   |   |   |   cramps <= 0
+|   |   |   |   |   |   |   |   |   |   |   fatigue <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   yellowish_skin <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   bladder_discomfort <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   blister <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   stomach_pain <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   itching <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_rash <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   indigestion <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   continuous_sneezing <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   headache <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   neck_pain <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   muscle_wasting <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   burning_micturition <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   muscle_weakness <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   pus_filled_pimples <= 0: Dimorphic hemmorhoids(piles) (120.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   pus_filled_pimples > 0: Acne (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   muscle_weakness > 0: Arthritis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   burning_micturition > 0: Urinary tract infection (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   muscle_wasting > 0: AIDS (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   neck_pain > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dizziness <= 0: Osteoarthristis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dizziness > 0: Cervical spondylosis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   headache > 0: Paralysis (brain hemorrhage) (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   continuous_sneezing > 0: Allergy (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   vomiting > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   loss_of_appetite <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sunken_eyes <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   headache <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   weakness_of_one_body_side <= 0: Alcoholic hepatitis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   weakness_of_one_body_side > 0: Paralysis (brain hemorrhage) (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   headache > 0: Paralysis (brain hemorrhage) (96.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sunken_eyes > 0: Gastroenteritis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   loss_of_appetite > 0: Peptic ulcer diseae (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   indigestion > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   headache <= 0: Peptic ulcer diseae (108.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   headache > 0: Migraine (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_rash > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nodal_skin_eruptions <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_peeling <= 0: Acne (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_peeling > 0: Psoriasis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   nodal_skin_eruptions > 0: Fungal infection (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   itching > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   burning_micturition <= 0: Fungal infection (108.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   burning_micturition > 0: Drug Reaction (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   stomach_pain > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   vomiting <= 0: Drug Reaction (108.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   vomiting > 0: GERD (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_rash <= 0: AIDS (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_rash > 0: Impetigo (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   blister > 0: Impetigo (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   bladder_discomfort > 0: Urinary tract infection (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   yellowish_skin > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   itching <= 0: Alcoholic hepatitis (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   itching > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0: Chronic cholestasis (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: Jaundice (6.0)
+|   |   |   |   |   |   |   |   |   |   |   fatigue > 0
+|   |   |   |   |   |   |   |   |   |   |   |   itching <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sweating <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   yellowish_skin <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dizziness <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   increased_appetite <= 0: Varicose veins (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   increased_appetite > 0: Diabetes  (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   dizziness > 0: Hypothyroidism (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   yellowish_skin > 0: Hepatitis C (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sweating > 0: Hyperthyroidism (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: Bronchial Asthma (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   vomiting > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0: Hypoglycemia (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: Jaundice (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   itching > 0: Jaundice (108.0)
+|   |   |   |   |   |   |   |   |   |   cramps > 0: Varicose veins (114.0)
+|   |   |   |   |   |   |   |   |   breathlessness > 0
+|   |   |   |   |   |   |   |   |   |   vomiting <= 0: Bronchial Asthma (114.0)
+|   |   |   |   |   |   |   |   |   |   vomiting > 0: Heart attack (6.0)
+|   |   |   |   |   |   |   |   nausea > 0
+|   |   |   |   |   |   |   |   |   headache <= 0
+|   |   |   |   |   |   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   |   |   |   |   |   itching <= 0: Hepatitis C (114.0)
+|   |   |   |   |   |   |   |   |   |   |   itching > 0: Chronic cholestasis (6.0)
+|   |   |   |   |   |   |   |   |   |   vomiting > 0
+|   |   |   |   |   |   |   |   |   |   |   fatigue <= 0: Chronic cholestasis (108.0)
+|   |   |   |   |   |   |   |   |   |   |   fatigue > 0
+|   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   sweating <= 0: Hepatitis D (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   sweating > 0: Hypoglycemia (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: Hepatitis E (6.0)
+|   |   |   |   |   |   |   |   |   headache > 0
+|   |   |   |   |   |   |   |   |   |   fatigue <= 0
+|   |   |   |   |   |   |   |   |   |   |   sweating <= 0: (vertigo) Paroymsal  Positional Vertigo (6.0)
+|   |   |   |   |   |   |   |   |   |   |   sweating > 0: Hypoglycemia (6.0)
+|   |   |   |   |   |   |   |   |   |   fatigue > 0: Hypoglycemia (102.0)
+|   |   |   |   |   |   |   stiff_neck > 0
+|   |   |   |   |   |   |   |   indigestion <= 0
+|   |   |   |   |   |   |   |   |   headache <= 0: Arthritis (114.0)
+|   |   |   |   |   |   |   |   |   headache > 0: Migraine (6.0)
+|   |   |   |   |   |   |   |   indigestion > 0: Migraine (108.0)
+|   |   |   |   |   |   lethargy > 0
+|   |   |   |   |   |   |   increased_appetite <= 0: Hypothyroidism (114.0)
+|   |   |   |   |   |   |   increased_appetite > 0: Diabetes  (114.0)
+|   |   |   |   |   chest_pain > 0
+|   |   |   |   |   |   headache <= 0
+|   |   |   |   |   |   |   breathlessness <= 0
+|   |   |   |   |   |   |   |   sweating <= 0: GERD (114.0)
+|   |   |   |   |   |   |   |   sweating > 0: Heart attack (12.0)
+|   |   |   |   |   |   |   breathlessness > 0: Heart attack (102.0)
+|   |   |   |   |   |   headache > 0: Hypertension  (6.0)
+|   |   |   |   joint_pain > 0
+|   |   |   |   |   loss_of_appetite <= 0
+|   |   |   |   |   |   skin_rash <= 0
+|   |   |   |   |   |   |   neck_pain <= 0
+|   |   |   |   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   |   |   |   skin_peeling <= 0: Osteoarthristis (6.0)
+|   |   |   |   |   |   |   |   |   skin_peeling > 0: Psoriasis (6.0)
+|   |   |   |   |   |   |   |   vomiting > 0: Hepatitis D (6.0)
+|   |   |   |   |   |   |   neck_pain > 0: Osteoarthristis (108.0)
+|   |   |   |   |   |   skin_rash > 0: Psoriasis (108.0)
+|   |   |   |   |   loss_of_appetite > 0
+|   |   |   |   |   |   high_fever <= 0
+|   |   |   |   |   |   |   mild_fever <= 0
+|   |   |   |   |   |   |   |   acute_liver_failure <= 0: Hepatitis D (108.0)
+|   |   |   |   |   |   |   |   acute_liver_failure > 0: Hepatitis E (6.0)
+|   |   |   |   |   |   |   mild_fever > 0: hepatitis A (6.0)
+|   |   |   |   |   |   high_fever > 0: Hepatitis E (108.0)
+|   |   |   loss_of_balance > 0
+|   |   |   |   vomiting <= 0
+|   |   |   |   |   nausea <= 0
+|   |   |   |   |   |   headache <= 0
+|   |   |   |   |   |   |   chest_pain <= 0: Cervical spondylosis (114.0)
+|   |   |   |   |   |   |   chest_pain > 0: Hypertension  (12.0)
+|   |   |   |   |   |   headache > 0: Hypertension  (102.0)
+|   |   |   |   |   nausea > 0: (vertigo) Paroymsal  Positional Vertigo (6.0)
+|   |   |   |   vomiting > 0: (vertigo) Paroymsal  Positional Vertigo (108.0)
+|   |   diarrhoea > 0
+|   |   |   mild_fever <= 0
+|   |   |   |   muscle_weakness <= 0
+|   |   |   |   |   high_fever <= 0: Gastroenteritis (114.0)
+|   |   |   |   |   high_fever > 0: Malaria (6.0)
+|   |   |   |   muscle_weakness > 0: Hyperthyroidism (114.0)
+|   |   |   mild_fever > 0: hepatitis A (114.0)
+|   chills > 0
+|   |   fatigue <= 0
+|   |   |   vomiting <= 0
+|   |   |   |   high_fever <= 0: Allergy (108.0)
+|   |   |   |   high_fever > 0: Malaria (6.0)
+|   |   |   vomiting > 0: Malaria (108.0)
+|   |   fatigue > 0
+|   |   |   chest_pain <= 0
+|   |   |   |   skin_rash <= 0: Typhoid (120.0)
+|   |   |   |   skin_rash > 0: Dengue (6.0)
+|   |   |   chest_pain > 0
+|   |   |   |   continuous_sneezing <= 0: Pneumonia (6.0)
+|   |   |   |   continuous_sneezing > 0: Common Cold (6.0)
+malaise > 0
+|   chest_pain <= 0
+|   |   nausea <= 0
+|   |   |   skin_rash <= 0
+|   |   |   |   high_fever <= 0: Hepatitis B (120.0)
+|   |   |   |   high_fever > 0: Chicken pox (6.0)
+|   |   |   skin_rash > 0: Chicken pox (114.0)
+|   |   nausea > 0: Dengue (114.0)
+|   chest_pain > 0
+|   |   loss_of_appetite <= 0
+|   |   |   continuous_sneezing <= 0
+|   |   |   |   headache <= 0: Pneumonia (114.0)
+|   |   |   |   headache > 0: Common Cold (6.0)
+|   |   |   continuous_sneezing > 0: Common Cold (108.0)
+|   |   loss_of_appetite > 0: Tuberculosis (120.0)
+
+Number of Leaves  : 	93
+
+Size of the tree : 	185

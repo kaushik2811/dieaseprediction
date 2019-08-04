@@ -1,0 +1,306 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     train-weka.filters.unsupervised.attribute.Remove-R3-5,9-11,13-14,16-19,21,23-25,28,30-31,33-34,37-38,41-56,58-65,67-82,84-85,87-89,91-96,98-106,108-131-weka.filters.unsupervised.attribute.Remove-V-R7,6,10,15,14,13,17,3,2,18,4,12,1,23,9,8,21,20,16,24,5,22,19,11,25
+Instances:    4920
+Attributes:   25
+              itching
+              skin_rash
+              chills
+              joint_pain
+              stomach_pain
+              vomiting
+              fatigue
+              weight_loss
+              lethargy
+              high_fever
+              sunken_eyes
+              sweating
+              headache
+              nausea
+              loss_of_appetite
+              constipation
+              abdominal_pain
+              chest_pain
+              cramps
+              swelling_joints
+              loss_of_balance
+              bladder_discomfort
+              irritability
+              family_history
+              prognosis
+Test mode:    split 66.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+chest_pain <= 0
+|   irritability <= 0
+|   |   chills <= 0
+|   |   |   headache <= 0
+|   |   |   |   nausea <= 0
+|   |   |   |   |   joint_pain <= 0
+|   |   |   |   |   |   lethargy <= 0
+|   |   |   |   |   |   |   abdominal_pain <= 0
+|   |   |   |   |   |   |   |   swelling_joints <= 0
+|   |   |   |   |   |   |   |   |   family_history <= 0
+|   |   |   |   |   |   |   |   |   |   fatigue <= 0
+|   |   |   |   |   |   |   |   |   |   |   constipation <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   loss_of_balance <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   bladder_discomfort <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   stomach_pain <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   itching <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_rash <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sunken_eyes <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   cramps <= 0: Allergy (48.0/36.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   cramps > 0: Varicose veins (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sunken_eyes > 0: Gastroenteritis (12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: AIDS (120.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   skin_rash > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0: Acne (150.0/36.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: Impetigo (96.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   itching > 0: Fungal infection (120.0/12.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   stomach_pain > 0: Drug Reaction (108.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   vomiting > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sunken_eyes <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   stomach_pain <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sweating <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   loss_of_appetite <= 0: Gastroenteritis (30.0/18.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   loss_of_appetite > 0: Peptic ulcer diseae (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sweating > 0: Heart attack (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   stomach_pain > 0: GERD (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   sunken_eyes > 0: Gastroenteritis (96.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   bladder_discomfort > 0: Urinary tract infection (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   loss_of_balance > 0: Cervical spondylosis (114.0)
+|   |   |   |   |   |   |   |   |   |   |   constipation > 0: Dimorphic hemmorhoids(piles) (114.0)
+|   |   |   |   |   |   |   |   |   |   fatigue > 0
+|   |   |   |   |   |   |   |   |   |   |   weight_loss <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   high_fever <= 0: Varicose veins (114.0)
+|   |   |   |   |   |   |   |   |   |   |   |   high_fever > 0: Bronchial Asthma (6.0)
+|   |   |   |   |   |   |   |   |   |   |   weight_loss > 0
+|   |   |   |   |   |   |   |   |   |   |   |   itching <= 0: Diabetes  (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   itching > 0: Jaundice (6.0)
+|   |   |   |   |   |   |   |   |   family_history > 0
+|   |   |   |   |   |   |   |   |   |   loss_of_appetite <= 0: Bronchial Asthma (114.0)
+|   |   |   |   |   |   |   |   |   |   loss_of_appetite > 0: Hepatitis C (6.0)
+|   |   |   |   |   |   |   |   swelling_joints > 0: Arthritis (120.0/6.0)
+|   |   |   |   |   |   |   abdominal_pain > 0
+|   |   |   |   |   |   |   |   itching <= 0
+|   |   |   |   |   |   |   |   |   loss_of_appetite <= 0
+|   |   |   |   |   |   |   |   |   |   fatigue <= 0: Alcoholic hepatitis (126.0/12.0)
+|   |   |   |   |   |   |   |   |   |   fatigue > 0: Jaundice (6.0)
+|   |   |   |   |   |   |   |   |   loss_of_appetite > 0: Peptic ulcer diseae (102.0)
+|   |   |   |   |   |   |   |   itching > 0
+|   |   |   |   |   |   |   |   |   loss_of_appetite <= 0: Jaundice (108.0)
+|   |   |   |   |   |   |   |   |   loss_of_appetite > 0
+|   |   |   |   |   |   |   |   |   |   vomiting <= 0: Hepatitis B (6.0)
+|   |   |   |   |   |   |   |   |   |   vomiting > 0: Chronic cholestasis (6.0)
+|   |   |   |   |   |   lethargy > 0
+|   |   |   |   |   |   |   itching <= 0
+|   |   |   |   |   |   |   |   loss_of_appetite <= 0: Diabetes  (114.0)
+|   |   |   |   |   |   |   |   loss_of_appetite > 0: Hepatitis B (6.0)
+|   |   |   |   |   |   |   itching > 0
+|   |   |   |   |   |   |   |   skin_rash <= 0: Hepatitis B (108.0)
+|   |   |   |   |   |   |   |   skin_rash > 0: Chicken pox (6.0)
+|   |   |   |   |   joint_pain > 0
+|   |   |   |   |   |   skin_rash <= 0
+|   |   |   |   |   |   |   vomiting <= 0: Osteoarthristis (120.0/6.0)
+|   |   |   |   |   |   |   vomiting > 0
+|   |   |   |   |   |   |   |   fatigue <= 0: hepatitis A (6.0)
+|   |   |   |   |   |   |   |   fatigue > 0
+|   |   |   |   |   |   |   |   |   high_fever <= 0: Hepatitis D (6.0)
+|   |   |   |   |   |   |   |   |   high_fever > 0: Hepatitis E (6.0)
+|   |   |   |   |   |   skin_rash > 0: Psoriasis (108.0)
+|   |   |   |   nausea > 0
+|   |   |   |   |   itching <= 0
+|   |   |   |   |   |   high_fever <= 0
+|   |   |   |   |   |   |   family_history <= 0
+|   |   |   |   |   |   |   |   fatigue <= 0
+|   |   |   |   |   |   |   |   |   loss_of_balance <= 0: hepatitis A (126.0/12.0)
+|   |   |   |   |   |   |   |   |   loss_of_balance > 0: (vertigo) Paroymsal  Positional Vertigo (6.0)
+|   |   |   |   |   |   |   |   fatigue > 0
+|   |   |   |   |   |   |   |   |   joint_pain <= 0
+|   |   |   |   |   |   |   |   |   |   vomiting <= 0: Hepatitis C (6.0)
+|   |   |   |   |   |   |   |   |   |   vomiting > 0: Hepatitis D (6.0)
+|   |   |   |   |   |   |   |   |   joint_pain > 0: Hepatitis D (108.0/6.0)
+|   |   |   |   |   |   |   family_history > 0: Hepatitis C (108.0)
+|   |   |   |   |   |   high_fever > 0: Hepatitis E (108.0)
+|   |   |   |   |   itching > 0: Chronic cholestasis (108.0)
+|   |   |   headache > 0
+|   |   |   |   high_fever <= 0
+|   |   |   |   |   loss_of_balance <= 0
+|   |   |   |   |   |   itching <= 0
+|   |   |   |   |   |   |   nausea <= 0: Paralysis (brain hemorrhage) (114.0/6.0)
+|   |   |   |   |   |   |   nausea > 0: (vertigo) Paroymsal  Positional Vertigo (6.0)
+|   |   |   |   |   |   itching > 0: Chicken pox (6.0)
+|   |   |   |   |   loss_of_balance > 0
+|   |   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   |   nausea <= 0: Hypertension  (12.0)
+|   |   |   |   |   |   |   nausea > 0: (vertigo) Paroymsal  Positional Vertigo (6.0)
+|   |   |   |   |   |   vomiting > 0: (vertigo) Paroymsal  Positional Vertigo (102.0)
+|   |   |   |   high_fever > 0
+|   |   |   |   |   vomiting <= 0: Chicken pox (108.0)
+|   |   |   |   |   vomiting > 0
+|   |   |   |   |   |   skin_rash <= 0: Malaria (6.0)
+|   |   |   |   |   |   skin_rash > 0: Dengue (6.0)
+|   |   chills > 0
+|   |   |   loss_of_appetite <= 0
+|   |   |   |   fatigue <= 0
+|   |   |   |   |   vomiting <= 0
+|   |   |   |   |   |   high_fever <= 0: Allergy (108.0)
+|   |   |   |   |   |   high_fever > 0: Malaria (6.0)
+|   |   |   |   |   vomiting > 0: Malaria (108.0)
+|   |   |   |   fatigue > 0: Typhoid (120.0)
+|   |   |   loss_of_appetite > 0: Dengue (114.0)
+|   irritability > 0
+|   |   headache <= 0
+|   |   |   sweating <= 0
+|   |   |   |   weight_loss <= 0
+|   |   |   |   |   lethargy <= 0
+|   |   |   |   |   |   fatigue <= 0: Migraine (6.0)
+|   |   |   |   |   |   fatigue > 0: Hypothyroidism (6.0)
+|   |   |   |   |   lethargy > 0: Hypothyroidism (114.0)
+|   |   |   |   weight_loss > 0: Hyperthyroidism (6.0)
+|   |   |   sweating > 0
+|   |   |   |   vomiting <= 0: Hyperthyroidism (114.0)
+|   |   |   |   vomiting > 0: Hypoglycemia (6.0)
+|   |   headache > 0
+|   |   |   vomiting <= 0
+|   |   |   |   fatigue <= 0: Migraine (108.0)
+|   |   |   |   fatigue > 0: Hypoglycemia (6.0)
+|   |   |   vomiting > 0: Hypoglycemia (108.0)
+chest_pain > 0
+|   headache <= 0
+|   |   loss_of_appetite <= 0
+|   |   |   chills <= 0
+|   |   |   |   stomach_pain <= 0
+|   |   |   |   |   loss_of_balance <= 0
+|   |   |   |   |   |   fatigue <= 0: Heart attack (120.0/6.0)
+|   |   |   |   |   |   fatigue > 0: Pneumonia (6.0)
+|   |   |   |   |   loss_of_balance > 0: Hypertension  (12.0)
+|   |   |   |   stomach_pain > 0: GERD (108.0)
+|   |   |   chills > 0: Pneumonia (120.0/6.0)
+|   |   loss_of_appetite > 0: Tuberculosis (120.0)
+|   headache > 0
+|   |   chills <= 0
+|   |   |   fatigue <= 0: Hypertension  (96.0)
+|   |   |   fatigue > 0: Common Cold (6.0)
+|   |   chills > 0: Common Cold (108.0)
+
+Number of Leaves  : 	78
+
+Size of the tree : 	155
+
+
+Time taken to build model: 0.38 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.03 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1603               95.8159 %
+Incorrectly Classified Instances        70                4.1841 %
+Kappa statistic                          0.9571
+Mean absolute error                      0.0028
+Root mean squared error                  0.0412
+Relative absolute error                  5.8476 %
+Root relative squared error             26.6948 %
+Total Number of Instances             1673     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.794    0.002    0.871      0.794    0.831      0.828    0.996     0.777     Fungal infection
+                 1.000    0.010    0.742      1.000    0.852      0.857    0.998     0.880     Allergy
+                 0.943    0.000    1.000      0.943    0.971      0.970    0.999     0.971     GERD
+                 0.891    0.000    1.000      0.891    0.943      0.943    0.999     0.954     Chronic cholestasis
+                 0.905    0.000    1.000      0.905    0.950      0.950    0.999     0.963     Drug Reaction
+                 0.935    0.000    1.000      0.935    0.966      0.966    0.999     0.973     Peptic ulcer diseae
+                 0.949    0.001    0.949      0.949    0.949      0.947    0.999     0.937     AIDS
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Diabetes 
+                 0.957    0.000    1.000      0.957    0.978      0.977    1.000     0.998     Gastroenteritis
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Bronchial Asthma
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hypertension 
+                 0.977    0.000    1.000      0.977    0.988      0.988    1.000     0.998     Migraine
+                 0.957    0.000    1.000      0.957    0.978      0.978    1.000     0.991     Cervical spondylosis
+                 1.000    0.002    0.892      1.000    0.943      0.943    1.000     0.993     Paralysis (brain hemorrhage)
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Jaundice
+                 0.886    0.000    1.000      0.886    0.940      0.940    0.999     0.945     Malaria
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Chicken pox
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Dengue
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Typhoid
+                 1.000    0.004    0.833      1.000    0.909      0.911    0.998     0.848     hepatitis A
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hepatitis B
+                 0.913    0.000    1.000      0.913    0.955      0.954    0.999     0.961     Hepatitis C
+                 0.951    0.004    0.867      0.951    0.907      0.906    0.998     0.858     Hepatitis D
+                 0.941    0.000    1.000      0.941    0.970      0.970    0.999     0.968     Hepatitis E
+                 0.971    0.002    0.917      0.971    0.943      0.942    0.999     0.915     Alcoholic hepatitis
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Tuberculosis
+                 0.957    0.000    1.000      0.957    0.978      0.977    0.999     0.980     Common Cold
+                 1.000    0.001    0.953      1.000    0.976      0.976    0.999     0.956     Pneumonia
+                 0.939    0.000    1.000      0.939    0.969      0.969    1.000     0.983     Dimorphic hemmorhoids(piles)
+                 1.000    0.001    0.957      1.000    0.978      0.977    1.000     0.965     Heart attack
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Varicose veins
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hypothyroidism
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hyperthyroidism
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Hypoglycemia
+                 0.860    0.000    1.000      0.860    0.925      0.925    0.996     0.923     Osteoarthristis
+                 0.941    0.002    0.889      0.941    0.914      0.913    0.998     0.876     Arthritis
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     (vertigo) Paroymsal  Positional Vertigo
+                 0.919    0.010    0.667      0.919    0.773      0.777    0.994     0.658     Acne
+                 1.000    0.000    1.000      1.000    1.000      1.000    1.000     1.000     Urinary tract infection
+                 0.956    0.002    0.935      0.956    0.945      0.944    0.998     0.914     Psoriasis
+                 0.750    0.000    1.000      0.750    0.857      0.863    0.995     0.860     Impetigo
+Weighted Avg.    0.958    0.001    0.965      0.958    0.959      0.959    0.999     0.954     
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s  t  u  v  w  x  y  z aa ab ac ad ae af ag ah ai aj ak al am an ao   <-- classified as
+ 27  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  7  0  0  0 |  a = Fungal infection
+  0 46  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = Allergy
+  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0 |  c = GERD
+  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = Chronic cholestasis
+  4  0  0  0 38  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  e = Drug Reaction
+  0  0  0  0  0 43  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  f = Peptic ulcer diseae
+  0  2  0  0  0  0 37  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  g = AIDS
+  0  0  0  0  0  0  0 36  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  h = Diabetes 
+  0  0  0  0  0  0  0  0 44  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  i = Gastroenteritis
+  0  0  0  0  0  0  0  0  0 53  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  j = Bronchial Asthma
+  0  0  0  0  0  0  0  0  0  0 45  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  k = Hypertension 
+  0  0  0  0  0  0  0  0  0  0  0 42  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  l = Migraine
+  0  2  0  0  0  0  0  0  0  0  0  0 45  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  m = Cervical spondylosis
+  0  0  0  0  0  0  0  0  0  0  0  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  n = Paralysis (brain hemorrhage)
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  o = Jaundice
+  0  5  0  0  0  0  0  0  0  0  0  0  0  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  p = Malaria
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  q = Chicken pox
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 34  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  r = Dengue
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 42  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  s = Typhoid
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 35  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  t = hepatitis A
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  u = Hepatitis B
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 42  4  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  v = Hepatitis C
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  w = Hepatitis D
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2 32  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  x = Hepatitis E
+  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  y = Alcoholic hepatitis
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  z = Tuberculosis
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  2  0  0  0  0  0  0  0  0  0  0  0  0  0 | aa = Common Cold
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0  0  0  0 | ab = Pneumonia
+  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 31  0  0  0  0  0  0  0  0  0  0  0  0 | ac = Dimorphic hemmorhoids(piles)
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0  0  0  0  0 | ad = Heart attack
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 41  0  0  0  0  0  0  0  0  0  0 | ae = Varicose veins
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0  0  0 | af = Hypothyroidism
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 40  0  0  0  0  0  0  0  0 | ag = Hyperthyroidism
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 38  0  0  0  0  0  0  0 | ah = Hypoglycemia
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 43  4  0  0  0  3  0 | ai = Osteoarthristis
+  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 32  0  0  0  0  0 | aj = Arthritis
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0 | ak = (vertigo) Paroymsal  Positional Vertigo
+  0  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 34  0  0  0 | al = Acne
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 35  0  0 | am = Urinary tract infection
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  2  0 43  0 | an = Psoriasis
+  0  0  0  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  8  0  0 30 | ao = Impetigo
+
